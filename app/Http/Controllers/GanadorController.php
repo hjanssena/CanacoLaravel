@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Participante;
 use App\Models\Ganador;
+use Barryvdh\DomPDF\Facade\Pdf;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
 
 class GanadorController
 {
@@ -12,9 +15,14 @@ class GanadorController
     {
         $ganadores = Ganador::with('participante')
             ->where('rechazado', false)
+            ->orderBy('id')
             ->paginate(10);
 
-        return view('ganadores', compact('ganadores'));
+        $approvedCount = Ganador::where('rechazado', false)
+            ->where('aprobado', true)
+            ->count();
+
+        return view('ganadores', compact('ganadores', 'approvedCount'));
     }
 
     public function gen_ganadores()
@@ -48,6 +56,30 @@ class GanadorController
         $ganador->rechazado = false;
         $ganador->save();
 
+        try {
+            $resp = Http::withHeaders([
+                'Authorization' => 'Bearer ' . config('services.supabase.function_key'),
+                'Content-Type' => 'application/json',
+            ])
+                ->post(config('services.supabase.functions_url'), [
+                    'record' => [
+                        'eMail' => $ganador->participante->eMail,
+                        'winner' => true,
+                    ],
+                ]);
+
+            if ($resp->failed()) {
+                Log::error('Resend-email function failed', [
+                    'status' => $resp->status(),
+                    'body' => $resp->body(),
+                ]);
+                return back()->with('warning', 'Aprobado, pero fallo el envío de email.');
+            }
+        } catch (\Exception $e) {
+            Log::error('Error calling Supabase function', ['exception' => $e]);
+            return back()->with('warning', 'Aprobado, pero ocurrió un error al enviar email.');
+        }
+
         return back()->with('success', 'Ganador aprobado.');
     }
 
@@ -59,5 +91,15 @@ class GanadorController
         $ganador->save();
 
         return back()->with('error', 'Ganador rechazado.');
+    }
+
+    public function downloadGanadoresPdf()
+    {
+        $ganadores = Ganador::with(['participante.comercio'])
+            ->where('aprobado', true)
+            ->get();
+
+        $pdf = Pdf::loadView('ganadores.pdf', compact('ganadores'));
+        return $pdf->download('ganadores_aprobados.pdf');
     }
 }

@@ -35,4 +35,8 @@ return [
         ],
     ],
 
+    'supabase' => [
+        'functions_url' => env('SUPABASE_FUNCTION_URL'),
+        'function_key' => env('SUPABASE_FUNCTION_KEY'),
+    ],
 ];

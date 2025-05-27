@@ -17,4 +17,9 @@ class Participante extends Model
         'ticket',
         'comercio_id',
     ];
+
+    public function comercio()
+    {
+        return $this->belongsTo(Comercio::class);
+    }
 }
