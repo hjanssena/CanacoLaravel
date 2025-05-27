@@ -16,8 +16,8 @@
             <a class="navbar-brand" href="#">Panel Administrador</a>
 
             <div class="d-flex">
-                <a href="#" class="btn btn-outline-light me-2">Comercios</a>
-                <a href="#" class="btn btn-outline-light">Ganadores</a>
+                <a href="/comercios" class="btn btn-outline-light me-2">Comercios</a>
+                <a href="/ganadores" class="btn btn-outline-light">Ganadores</a>
             </div>
         </div>
     </nav>

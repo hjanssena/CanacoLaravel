@@ -10,10 +10,9 @@ use Illuminate\Support\Facades\Log;
 
 class GanadorController
 {
-
     public function index_ganadores()
     {
-        $ganadores = Ganador::with('participante')
+        $ganadores = Ganador::with('participante.comercio')
             ->where('rechazado', false)
             ->orderBy('id')
             ->paginate(10);

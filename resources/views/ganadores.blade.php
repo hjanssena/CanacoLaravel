@@ -8,7 +8,7 @@
         <h5>Ganadores Aprobados: {{ $approvedCount }}</h5>
     </div>
     @if ($ganadores->isEmpty())
-        <div class="container p-3">
+        <div class="container p-2">
             <div class="row">
                 <form class="col-sm text-center" action="{{ route('ganadores.generar') }}">
                     <button class="btn btn-info">Generar más ganadores</button>
@@ -25,6 +25,7 @@
                         <th>Monto</th>
                         <th>Fecha de Compra</th>
                         <th>Teléfono</th>
+                        <th>Comercio</th>
                         <th>Ticket</th>
                         <th>Verificar</th>
                     </tr>
@@ -40,6 +41,7 @@
                             <td>${{ number_format($p->monto, 2) }}</td>
                             <td>{{ \Carbon\Carbon::parse($p->fecha_compra)->format('d/m/Y') }}</td>
                             <td>{{ $p->telefono }}</td>
+                            <td>{{ $p->comercio->nombre_comercio }}</td>
                             <td>
                                 <button class="btn btn-sm btn-info" data-bs-toggle="modal"
                                     data-bs-target="#ticketModal{{ $ganador->id }}">
