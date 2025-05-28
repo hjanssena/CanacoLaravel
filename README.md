@@ -28,14 +28,14 @@
 <img src="https://github.com/hjanssena/CanacoLaravel/blob/2d1a35f1d57979e0bd8ef6b244c0a0b5002ff615/ReadmeAssets/Flujo_Ganadores.jpeg" height="500" border="50"/>
 
 #### Mockup
-<img src="https://github.com/hjanssena/CanacoLaravel/blob/2d1a35f1d57979e0bd8ef6b244c0a0b5002ff615/ReadmeAssets/Mockup.jpeg"height="500" border="50"/>
+<img src="https://github.com/hjanssena/CanacoLaravel/blob/2d1a35f1d57979e0bd8ef6b244c0a0b5002ff615/ReadmeAssets/Mockup.jpeg" height="500" border="50"/>
 
 #### Diagrama ER
-<img src="https://github.com/hjanssena/CanacoLaravel/blob/2d1a35f1d57979e0bd8ef6b244c0a0b5002ff615/ReadmeAssets/ER.png"height="500" border="50"/>
+<img src="https://github.com/hjanssena/CanacoLaravel/blob/2d1a35f1d57979e0bd8ef6b244c0a0b5002ff615/ReadmeAssets/ER.png" height="500" border="50"/>
 
 ###  Laravel
 #### Diagrama de clases
-<img src="https://github.com/hjanssena/CanacoLaravel/blob/2d1a35f1d57979e0bd8ef6b244c0a0b5002ff615/ReadmeAssets/Clases.jpg"height="500" border="50"/>
+<img src="https://github.com/hjanssena/CanacoLaravel/blob/2d1a35f1d57979e0bd8ef6b244c0a0b5002ff615/ReadmeAssets/Clases.jpg" height="500" border="50"/>
 
 ## Atributos de calidad
 
