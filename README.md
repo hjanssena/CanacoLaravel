@@ -1,6 +1,6 @@
 > # Panel Administrador  |  VEN AL CENTRO Y GANA 2025
 
->![UADY logo](https://github.com/hjanssena/FIS-Proyecto/blob/JPabloMartinez/Assets/Logo_UADY.png?raw=true)
+>![UADY logo](https://github.com/hjanssena/CanacoLaravel/blob/2d1a35f1d57979e0bd8ef6b244c0a0b5002ff615/ReadmeAssets/Logo_UADY.png)
 
 ---
 ### Diseño de Software
@@ -25,22 +25,20 @@
 ## Artefactos
 ### FlutterFlow
 #### Diagrama de flujo ganadores
-<img src="https://github.com/hjanssena/FIS-Proyecto/blob/b3437fb56d8e14e01c90bac4d7f6ad1923f5de83/Assets/Logo_PitSTOP.jpg" width="500" height="500" border="50"/>
+<img src="https://github.com/hjanssena/CanacoLaravel/blob/2d1a35f1d57979e0bd8ef6b244c0a0b5002ff615/ReadmeAssets/Flujo_Ganadores.jpeg" width="500" height="500" border="50"/>
 
 #### Mockup
-<img src="https://github.com/hjanssena/FIS-Proyecto/blob/b3437fb56d8e14e01c90bac4d7f6ad1923f5de83/Assets/Logo_PitSTOP.jpg" width="500" height="500" border="50"/>
+<img src="https://github.com/hjanssena/CanacoLaravel/blob/2d1a35f1d57979e0bd8ef6b244c0a0b5002ff615/ReadmeAssets/Mockup.jpeg" width="500" height="500" border="50"/>
 
 #### Diagrama ER
-<img src="https://github.com/hjanssena/FIS-Proyecto/blob/b3437fb56d8e14e01c90bac4d7f6ad1923f5de83/Assets/Logo_PitSTOP.jpg" width="500" height="500" border="50"/>
+<img src="https://github.com/hjanssena/CanacoLaravel/blob/2d1a35f1d57979e0bd8ef6b244c0a0b5002ff615/ReadmeAssets/ER.png" width="500" height="500" border="50"/>
 
 ###  Laravel
 #### Diagrama de clases
-<img src="https://github.com/hjanssena/FIS-Proyecto/blob/b3437fb56d8e14e01c90bac4d7f6ad1923f5de83/Assets/Logo_PitSTOP.jpg" width="500" height="500" border="50"/>
+<img src="https://github.com/hjanssena/CanacoLaravel/blob/2d1a35f1d57979e0bd8ef6b244c0a0b5002ff615/ReadmeAssets/Clases.jpg" width="500" height="500" border="50"/>
 
 ## Atributos de calidad
 
 ### FlutterFlow
 
 ### Laravel
-
-
