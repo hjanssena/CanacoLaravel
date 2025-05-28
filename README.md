@@ -1,61 +1,46 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+> # Panel Administrador  |  VEN AL CENTRO Y GANA 2025
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+>![UADY logo](https://github.com/hjanssena/FIS-Proyecto/blob/JPabloMartinez/Assets/Logo_UADY.png?raw=true)
 
-## About Laravel
+---
+### Diseño de Software
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### Equipo
+ - Hugo de Jesús Janssen Aguilar
+ - Edwing Mauricio Molina Chim
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Requisitos Funcionales
+#### Gestión de Establecimientos por el Administrador
+- El sistema debe proporcionar una interfaz para el administrador donde pueda:
+	-   Visualizar la lista de establecimientos registrados.
+	-   Aceptar o rechazar cada solicitud de participación.
+-   El sistema debe notificar al establecimiento su estatus (aceptado/rechazado) vía correo electrónico.
+-   Tener un reporte de rechazados, aceptados y status en PDF
+#### Generación de Ganadores
+-   El sistema debe permitir al administrador generar una lista de 130 ganadores de forma aleatoria a partir de los participantes registrados con participaciones válidas. 
+-   La lista de ganadores debe poder exportarse a un archivo PDF.
+-   La generación de ganadores debe realizarse a través de la interfaz web del administrador.
+-   UI para verificar que los ganadores sean válidos.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Artefactos
+### FlutterFlow
+#### Diagrama de flujo ganadores
+<img src="https://github.com/hjanssena/FIS-Proyecto/blob/b3437fb56d8e14e01c90bac4d7f6ad1923f5de83/Assets/Logo_PitSTOP.jpg" width="500" height="500" border="50"/>
 
-## Learning Laravel
+#### Mockup
+<img src="https://github.com/hjanssena/FIS-Proyecto/blob/b3437fb56d8e14e01c90bac4d7f6ad1923f5de83/Assets/Logo_PitSTOP.jpg" width="500" height="500" border="50"/>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+#### Diagrama ER
+<img src="https://github.com/hjanssena/FIS-Proyecto/blob/b3437fb56d8e14e01c90bac4d7f6ad1923f5de83/Assets/Logo_PitSTOP.jpg" width="500" height="500" border="50"/>
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+###  Laravel
+#### Diagrama de clases
+<img src="https://github.com/hjanssena/FIS-Proyecto/blob/b3437fb56d8e14e01c90bac4d7f6ad1923f5de83/Assets/Logo_PitSTOP.jpg" width="500" height="500" border="50"/>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Atributos de calidad
 
-## Laravel Sponsors
+### FlutterFlow
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Laravel
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

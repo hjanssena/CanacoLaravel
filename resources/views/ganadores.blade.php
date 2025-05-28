@@ -59,8 +59,7 @@
                                                     aria-label="Cerrar"></button>
                                             </div>
                                             <div class="modal-body text-center">
-                                                <img src="{{ asset('storage/tickets/' . $p->ticket_image) }}" class="img-fluid"
-                                                    alt="Ticket">
+                                                <img src="{{ $p->ticket}}" class="img-fluid" alt="Ticket">
                                             </div>
                                         </div>
                                     </div>

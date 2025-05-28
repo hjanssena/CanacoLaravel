@@ -15,7 +15,7 @@ class GanadorController
         $ganadores = Ganador::with('participante.comercio')
             ->where('rechazado', false)
             ->orderBy('id')
-            ->paginate(10);
+            ->paginate(perPage: 10);
 
         $approvedCount = Ganador::where('rechazado', false)
             ->where('aprobado', true)
