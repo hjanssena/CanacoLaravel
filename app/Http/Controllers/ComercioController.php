@@ -21,7 +21,7 @@ class ComercioController
         return view('comercios', compact('comercios', 'approvedCount'));
     }
 
-        public function aprobar($id)
+    public function aprobar($id)
     {
         $comer = Comercio::findOrFail($id);
         $comer->aceptado = true;
@@ -33,7 +33,7 @@ class ComercioController
                 'Authorization' => 'Bearer ' . config('services.supabase.function_key'),
                 'Content-Type' => 'application/json',
             ])
-                ->post(config('services.supabase.functions_url'), [
+                ->post(config('services.supabase.functions_comercio'), [
                     'record' => [
                         'eMail' => $comer->eMail,
                         'aprobado' => true,
@@ -61,6 +61,30 @@ class ComercioController
         $comer->aceptado = false;
         $comer->rechazado = true;
         $comer->save();
+
+        try {
+            $resp = Http::withHeaders([
+                'Authorization' => 'Bearer ' . config('services.supabase.function_key'),
+                'Content-Type' => 'application/json',
+            ])
+                ->post(config('services.supabase.functions_comercio'), [
+                    'record' => [
+                        'eMail' => $comer->eMail,
+                        'aprobado' => false,
+                    ],
+                ]);
+
+            if ($resp->failed()) {
+                Log::error('send-comercio-email function failed', [
+                    'status' => $resp->status(),
+                    'body' => $resp->body(),
+                ]);
+                return back()->with('warning', 'Aprobado, pero fallo el envío de email.');
+            }
+        } catch (\Exception $e) {
+            Log::error('Error calling Supabase function', ['exception' => $e]);
+            return back()->with('warning', 'Aprobado, pero ocurrió un error al enviar email.');
+        }
 
         return back()->with('error', 'Comercio rechazado.');
     }

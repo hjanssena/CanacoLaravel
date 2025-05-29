@@ -37,6 +37,7 @@ return [
 
     'supabase' => [
         'functions_url' => env('SUPABASE_FUNCTION_URL'),
+        'functions_comercio' => env('SUPABASE_FUNCTION_COMERCIO'),
         'function_key' => env('SUPABASE_FUNCTION_KEY'),
     ],
 ];
