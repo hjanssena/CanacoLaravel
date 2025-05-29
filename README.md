@@ -27,6 +27,9 @@
 #### Diagrama de flujo ganadores
 <img src="https://github.com/hjanssena/CanacoLaravel/blob/2d1a35f1d57979e0bd8ef6b244c0a0b5002ff615/ReadmeAssets/Flujo_Ganadores.jpeg" height="500" border="50"/>
 
+#### Diagrama de flujo comercios
+<img src="https://github.com/hjanssena/CanacoLaravel/blob/a5198a33b180f6e24111f47023ce74c1aa87f040/ReadmeAssets/Flujo_Comercios.jpeg" height="500" border="50"/>
+
 #### Mockup
 <img src="https://github.com/hjanssena/CanacoLaravel/blob/2d1a35f1d57979e0bd8ef6b244c0a0b5002ff615/ReadmeAssets/Mockup.jpeg" height="500" border="50"/>
 
