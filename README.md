@@ -40,6 +40,21 @@
 #### Diagrama de clases
 <img src="https://github.com/hjanssena/CanacoLaravel/blob/2d1a35f1d57979e0bd8ef6b244c0a0b5002ff615/ReadmeAssets/Clases.jpg" height="500" border="50"/>
 
+## Vistas
+### FlutterFlow
+#### Vista ganadores
+<img src="https://github.com/hjanssena/CanacoLaravel/blob/993265bc7be23e1f33fd8b133edc54f386dd71bc/ReadmeAssets/Flutter-Ganadores.png" height="500" border="50"/>
+
+#### Vista comercios
+<img src="https://github.com/hjanssena/CanacoLaravel/blob/993265bc7be23e1f33fd8b133edc54f386dd71bc/ReadmeAssets/Flutter-Comercios.png" height="500" border="50"/>
+
+### Laravel
+#### Vista ganadores
+<img src="https://github.com/hjanssena/CanacoLaravel/blob/993265bc7be23e1f33fd8b133edc54f386dd71bc/ReadmeAssets/LaravelGanadores.png" height="500" border="50"/>
+
+#### Vista comercios
+<img src="https://github.com/hjanssena/CanacoLaravel/blob/993265bc7be23e1f33fd8b133edc54f386dd71bc/ReadmeAssets/LaravelComercios.png" height="500" border="50"/>
+
 ## Comparacion Laravel vs Flutterflow
 
 - En la herramienta de Flutterflow se pudo observar la rapidez para el desarrollo del panel de administrador por el manejo de componentes que solo arrastramos dentro de otros, esto nos dejó más tiempo para el diseño de la base de datos y otras cosas ya que al ser Low-Code nos ahorró mucho tiempo en comparación con el framework Laravel que tomo un poco más de tiempo al estar codificando y ejecutando cada vez para visualizarlo cosa que no era completamente necesaria en Flutterflow que ya te mostraba como estaba quedando la IU. 
