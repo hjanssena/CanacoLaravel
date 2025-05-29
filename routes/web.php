@@ -12,3 +12,6 @@ Route::get('/ganadores/pdf', [GanadorController::class, 'downloadGanadoresPdf'])
 
 Route::redirect('/', '/comercios');
 Route::get('/comercios', [ComercioController::class, 'index_comercios'])->name('comercios');
+Route::post('/comercios/{id}/aprobar', [ComercioController::class, 'aprobar'])->name('comercios.aprobar');
+Route::post('/comercios/{id}/rechazar', [ComercioController::class, 'rechazar'])->name('comercios.rechazar');
+Route::get('/comercios/pdf',[ComercioController::class, 'downloadPdf'])->name('comercios.pdf');
