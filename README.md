@@ -6,8 +6,8 @@
 ### Diseño de Software
 
 ### Equipo
- - Hugo de Jesús Janssen Aguilar
- - Edwing Mauricio Molina Chim
+ - Hugo de Jesús Janssen Aguilar (Video: https://youtu.be/tUmQZSOUBSM)
+ - Edwing Mauricio Molina Chim (Video: https://www.youtube.com/watch?v=nMtM25UzZIU)
 
 ## Requisitos Funcionales
 #### Gestión de Establecimientos por el Administrador
